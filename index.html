@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Conference</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <header class="header-container">
+        <span class="header-item">Register for</span>
+        <span class="header-item header-title">Full Stack Conference</span>
+    </header>
+
+    <main class="main-container">
+        <div class="main-item required-field">* - required field</div>
+        <section class="main-item info-container">
+            <section class="info-item basic-info">
+                <h2 class="basic-info-item basic-info-title">Basic Info</h2>
+                <div class="basic-info-item basic-info-name">
+                    <label class="info-name-item name-label" for="">Name: *</label>
+                    <input class="info-name-item name-textbox" type="text">
+                </div>
+                <div class="basic-info-item basic-info-email">
+                    <label class="info-name-item email-label" for="">Email: *</label>
+                    <input class="info-name-item email-textbox" type="text">
+                </div>
+                <div class="basic-info-item basic-info-job">
+                    <label class="info-basic-item ascuns" for="">Job Role</label>
+                    <select class="info-basic-item job-combobox" name="Select Job Role" id="job-role">
+                        <option value="sof-dev">Software Developer</option>
+                        <option value="hard-eng">Hardware Engineer</option>
+                        <option value="full-dev">Full Stack Developer</option>
+                        <option value="front-dev">Front End Developer</option>
+                        <option value="back-dev">Back End Developer</option>
+                    </select>
+                </div>
+            </section>
+            <section class="info-item ts-info">
+                <h2 class="ts-info-item ts-info-title">T-Shirt Info</h2>
+                <div class="ts-info-item ts-details">
+                    <div class="ts-details-info ts-size">
+                        <label class="ts-size-item size-label" for="">Size:</label>
+                        <select class="ts-size-item size-combobox" name="size" id="size">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="X">X</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </div>
+                    <div class="ts-details-info ts-design">
+                        <label class="ts-design-item design-label" for="">Design:</label>
+                        <select class="ts-design-item design-combobox" name="design" id="design">
+                            <option value="theme1">Black and white</option>
+                            <option value="theme2">Old School</opti on>
+                            <option value="theme3">Science</option>
+                            <option value="theme4">3D Effects</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ts-info-item ts-color">
+                    <label class="ts-color-item color-label" for="">Color</label>
+                    <select class="ts-color-item color-combobox" name="color" id="color">
+                        <option value="blue">Blue</option>
+                        <option value="orange">Orange</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="green">Green</option>
+                        <option value="red">Red</option>
+                    </select>
+                </div>
+                <div class="ts-info-item other-job-role">
+                    <label class="ascuns" for=""></label>
+                    <input class="other-job-role-item" type="text" placeholder="Other job role?">
+                </div>
+            </section>
+        </section>
+        <section class="main-item activities-container">
+            <h2 class="activities-item activities-title">Register for activities</h2>
+
+
+            <section class="activities-item js-container">
+                <div class="js-item up">
+                    <div class="js-up-item checkbox-container">
+                        <input class="js-checkbox-item js-checkbox" type="checkbox" name="agree_tos" id="agree">
+                        <label class="js-checkbox-item js-label" for="agree">Main Conference</label>
+                    </div>
+                    <img class="js-up-item card-img" src="img/js.svg" alt="">
+                </div>
+                <div class="js-item js-down">
+                    <p class="js-down-item js-price">$200</p>
+                </div>
+            </section>
+
+
+            <section class="activities-item cards-container">
+                <div class="card">
+                    <div class="up">
+                        <div class="jreact-up-item checkbox-container">
+                            <input class="react-checkbox-item react-checkbox" type="checkbox" name="agree_tos"
+                                id="agree">
+                            <label class="react-checkbox-item react-label" for="agree">JavaScript Libraries
+                                Workshop</label>
+                        </div>
+                        <img class="react-up-item card-img" src="img/react.svg" alt="">
+                    </div>
+                    <div class="down">
+                        <p class="react-down-item d">Tuesday 9am-12pm</p>
+                        <p class="react-down-item react-price">$100</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="up">
+                        <div class="nodejs-up-item checkbox-container">
+                            <input class="nodejs-checkbox-item checkbox" type="checkbox" name="agree_tos" id="agree">
+                            <label class="nodejs-checkbox-item nodejs-label" for="agree">Node.js Workshop</label>
+                        </div>
+                        <img class="nodejs-up-item card-img" src="img/node.svg" alt="">
+                    </div>
+                    <div class="down">
+                        <p class="nodejs-down-item d">Tuesday 1pm-4pm</p>
+                        <p class="nodejs-down-item nodejs-price">$100</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="up">
+                        <div class="angular-up-item checkbox-container">
+                            <input class="angular-checkbox-item angular-checkbox" type="checkbox" name="agree_tos"
+                                id="agree">
+                            <label class="angular-checkbox-item angular-label" for="agree">JavaScript FrameWorks
+                                Workshop</label>
+                        </div>
+                        <img class="angular-up-item card-img" src="img/angular.svg" alt="">
+                    </div>
+                    <div class="down">
+                        <p class="angular-down-item d">Tuesday 9am-12pm</p>
+                        <p class="angular-down-item angular-price">$100</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="up">
+                        <div class="build-up-item checkbox-container">
+                            <input class="build-checkbox-item build-checkbox" type="checkbox" name="agree_tos"
+                                id="agree">
+                            <label class="build-checkbox-item build-label" for="agree">Build Tools
+                                Workshop</label>
+                        </div>
+                        <img class="build-up-item card-img" src="img/build.svg" alt="">
+                    </div>
+                    <div class="down">
+                        <p class="build-down-item d">Tuesday 1pm-4pm</p>
+                        <p class="build-down-item build-price">$100</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="up">
+                        <div class="npm-up-item checkbox-container">
+                            <input class="npm-checkbox-item npm-checkbox" type="checkbox" name="agree_tos" id="agree">
+                            <label class="npm-checkbox-item npm-label" for="agree">npm Workshop</label>
+                        </div>
+                        <img class="npm-up-item card-img" src="img/npm.svg" alt="">
+                    </div>
+                    <div class="down">
+                        <p class="npm-down-item d">Wednesday 9am-12pm</p>
+                        <p class="npm-down-item npm-price">$100</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="up">
+                        <div class="express-up-item checkbox-container">
+                            <input class="express-checkbox-item express-checkbox" type="checkbox" name="agree_tos"
+                                id="agree">
+                            <label class="express-checkbox-item express-label" for="agree">Express Workshop</label>
+                        </div>
+                        <img class="express-up-item card-img" src="img/express.svg" alt="">
+                    </div>
+                    <div class="down">
+                        <p class="express-down-item d">Tuesday 1pm-4pm</p>
+                        <p class="express-down-item express-price">$100</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="main-item payment">
+            <div class="payment-item payment-header">
+                <h2 class="payment-header-item payment-title">Payment Info</h2>
+                <h2 class="payment-header-item payment-total">Total: $0</h2>
+            </div>
+            <div class="payment-item details">
+                <div class="details-item details-left">
+                    <div class="left-item method-container">
+                        <label class="method-item method-label" for="">I'm going to pay with</label>
+                        <select class="method-item method-combobox" name="combobox" id="combobox">
+                            <option value="visa">Visa</option>
+                            <option value="bt">BT</option>
+                            <option value="bcr">BCR</option>
+                            <option value="brd">BRD</option>
+                            <option value="alphabank">Alpha Bank</option>
+                        </select>
+                    </div>
+                    <div class="left-item card-number-conatiner">
+                        <label class="card-number-item card-number-label" for="">Card Number: *</label>
+                        <input class="card-number-item card-number-textbox" type="text">
+                    </div>
+                </div>
+                <div class="details-item details-right">
+                    <div class="right-item up-details">
+                        <div class="up-item expiration-date">
+                            <label class="expiration-date-item expiration-date-label" for="">Expiration Date</label>
+                            <select class="expiration-date-item expiration-date-checkbox" name="exp-date" id="exp-date">
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="Octomber">Octomber</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                            </select>
+                        </div>
+                        <div class="up-item expiration-year">
+                            <label class="expiration-year-item expiration-year-label" for="">Expiration Year</label>
+                            <select class="expiration-year-item expiration-year-checkbox" name="exp-year" id="exp-year">
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="right-item down-details">
+                        <div class="down-item zip-code">
+                            <label class="zip-code-item zip-code-label" for="">Zip Code:*</label>
+                            <input class="zip-code-item zip-code-textbox" type="text">
+                        </div>
+                        <div class="down-item cvv">
+                            <label class="cvv-item cvv-label" for="">CVV:*</label>
+                            <input class="cvv-item cvv-textbox" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-item options">
+                <div class="options-item paypal">
+                    <h3 class="paypal-item paypal-title">PayPal</h3>
+                    <p class="paypal-item paypal-description">If you selected the PayPal option we'll take yout to
+                        PayPal's site to set up your billing information, when you click "Register" below</p>
+                </div>
+                <div class="options-item bitcoin">
+                    <h3 class="bitcoin-item bitcoin-title">Bitcoin</h3>
+                    <p class="bitcoin-item bitcoin-description">If you selected the PayPal option we'll take yout to
+                        Coinbase site to set up your billing information. Due to the nature of exchanging Bitcoin, all
+                        Bictoin transactions will be final</p>
+                </div>
+            </div>
+            <div class="payment-item register-btn">
+                <button class="register-button">Register</button>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
